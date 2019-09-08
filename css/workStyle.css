@@ -1,0 +1,129 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background:transparent;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left-style: solid;
+    margin-left: 15px;
+    border-width: 1px;
+}
+
+
+/*------Nav Style Sheet------*/
+.nav {
+    display: flex;
+    height: auto;
+    padding-top: 2vh;
+}
+
+    .navIcons {
+        flex: 1;
+        text-align: right;
+    }
+
+        .navIcons a {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .backArrow {
+            text-align: left;
+            padding: 10px 5px 10px 20px;
+        }
+
+            .backArrow:hover {
+                background-color:rgb(177, 177, 177);
+            }
+
+        .navIcons:last-child {
+            margin-right:3%;
+        }
+
+
+
+.Container {
+    align-content: center;
+    padding-bottom: 5vh;
+}
+
+.githubContainer {
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 30pt;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ProjectContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    vertical-align: middle;
+    font-size: calc(12pt + .5vw);
+}
+
+p {
+    color: rgb(70, 70, 70);
+    font-size: calc(8pt + .5vw);
+    line-height: 1.5em;
+}
+    p span{
+        color: black;
+        font-weight: bold;
+        padding-right: 2vw;
+    }
+
+        .PixelJumper {
+            margin-top: 10vh;
+        }
+
+        .buttons p {
+            margin-top: 10px;
+        }
+
+        .buttons a {
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 10px;
+        }
+
+            .buttons a:hover {
+                background-color: rgb(70, 70, 70);
+            }
+
+
+        .ImageContainer p {
+            text-align: center;
+            background-color: black;
+            width: 180px;
+            padding: 5px 0;
+            color: white;
+            font-size: 12pt;
+        }
+
+            .ImageContainer img {
+                margin-top: 10px;
+                width: 20vw;
+                vertical-align: middle;
+            }
+
+
+
+
