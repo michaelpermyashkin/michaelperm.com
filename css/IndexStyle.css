@@ -1,12 +1,13 @@
 /*------Global Style Sheet------*/
+
 * {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background:transparent;
+    background: transparent;
 }
 
 .clearfix::after {
@@ -20,7 +21,9 @@ html {
     font-weight: 100;
 }
 
+
 /* This is the area behind the banner*/
+
 body {
     height: 100vh;
     background-color: rgb(255, 253, 253);
@@ -51,74 +54,15 @@ h5 {
     color: black;
 }
 
-/*------Nav Style Sheet------*/
-.nav {
-    display: flex;
-    align-items: center;
-    height: auto;
-}
-
-.signature {
-    margin-left: 3vw;
-}
-
-.signatureImage {
-    width: calc(180px + 5vw);
-    height: auto;
-    vertical-align: middle;
-}
-
-.navIcons {
-    flex: 1;
-    text-align: right;
-}
-
-.navIcons a {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-.navIcons:last-child {
-    margin-right:3%;
-}
-
-@media screen and (max-width: 700px) {
-    .nav {
-        padding: 20px 0 20px 0;
-        display: flex;
-        height: auto;
-    }
-    
-    .signature {
-       display: none;
-    }
-    
-    .signatureImage {
-        display: none;
-    }
-    
-    .navIcons {
-        flex: 1;
-        text-align: center;
-    }
-    
-    .navIcons a {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px;
-    }
-    
-    .navIcons:last-child {
-        margin-right:3%;
-    }
-}
 
 /*------Landing Style Sheet------*/
+
 .landing {
+    padding-top: 10vh;
     text-align: center;
 }
-.landingText pre{
+
+.landingText pre {
     font-family: 'Courier New', Courier, monospace;
     font-size: calc(10pt + .3vw);
     position: relative;
@@ -141,8 +85,10 @@ h5 {
     height: 50vh;
 }
 
+
 /*------Menu List Style Sheet------*/
-.menu {  
+
+.menu {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10vh;
     padding-bottom: 20px;
@@ -151,17 +97,17 @@ h5 {
     letter-spacing: 3px;
 }
 
-    .menu a {
-        text-decoration: none;
-        color: black;
-        padding-top: 5vh;
-    }
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding-top: 5vh;
+}
 
-        .menu a:hover {
-            background-color: rgb(114, 46, 46);
-            color: white;
-        }
+.menu a:hover {
+    background-color: rgb(114, 46, 46);
+    color: white;
+}
 
-    .menu span {
-        font-size: calc(19pt + .5vw);
-    }
+.menu span {
+    font-size: calc(19pt + .5vw);
+}
