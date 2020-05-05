@@ -10091,14 +10091,6 @@ a.text-dark:focus {
     border-color: #2c3e50 !important;
 }
 
-.divider-custom .divider-custom-line:first-child {
-    margin-right: 1rem;
-}
-
-.divider-custom .divider-custom-line:last-child {
-    margin-left: 1rem;
-}
-
 .divider-custom .divider-custom-icon {
     color: #2c3e50 !important;
     font-size: 2rem;
@@ -10231,7 +10223,7 @@ a.text-dark:focus {
 
 #mast-head-wrapper {
     position: absolute;
-    bottom: 25%;
+    bottom: 22%;
 }
 
 @media (min-width: 992px) {
@@ -10293,7 +10285,7 @@ a.text-dark:focus {
     top: 1rem;
     font-size: 3rem;
     line-height: 3rem;
-    color: #1abc9c;
+    color: #6f6f6f;
     opacity: 1;
 }
 
