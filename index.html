@@ -31,6 +31,7 @@
                 <a id="contact-link" href="#">Contact</a>
                 <a id="music-link" href="#">Music</a>
                 <a id="portfolio-link" href="./portfolio.html">Portfolio</a>
+                <a id="photography-link" href="#">Photography</a>
             </div>
         </div>
         <div class="social-container">
@@ -98,6 +99,13 @@
         // Portfolio
         jQuery('#portfolio-link').hover(function() {
             jQuery('body').css("background-image", "url(../assets/img/portfolio-bg.png)");
+        }).mouseleave(function() {
+            setBackground();
+        });
+
+        // Portfolio
+        jQuery('#photography-link').hover(function() {
+            jQuery('body').css("background-image", "url(../assets/img/photography-bg.jpg)");
         }).mouseleave(function() {
             setBackground();
         });

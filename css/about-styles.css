@@ -6,6 +6,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #2e2e2e;
+    font-family: 'Kalam', cursive !important;
+}
+
+.header-section {
     font-family: 'Shadows Into Light', cursive !important;
 }
 
@@ -16,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .page-title {
@@ -43,5 +47,27 @@ body {
 }
 
 .tab {
-    margin-left: 25px;
+    margin-left: 30px;
+}
+
+.about-container p {
+    font-size: 1.15em;
+    line-height: 2rem;
+    padding-left: 10px;
+    border-left: 1px solid #FFF;
+}
+
+.text-larger {
+    font-size: 1.5em !important;
+}
+
+.love-list {
+    padding: 15px;
+    border: 1px solid #FFF;
+}
+
+.love-list-label {
+    width: 100% !important;
+    border-bottom: 1px solid #FFF;
+    font-size: 1.9rem;
 }
