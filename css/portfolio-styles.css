@@ -55,12 +55,12 @@ body {
 }
 
 .background-card .card-title {
-    color: #E16565;
+    border-bottom: 1px solid #FFF;
 }
 
 .background-card .list-label-item {
     font-size: 15pt !important;
-    color: #8DC87C;
+    /* color: #8DC87C; */
 }
 
 .background-card dd {

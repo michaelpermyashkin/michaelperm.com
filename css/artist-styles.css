@@ -1,0 +1,58 @@
+body {
+    font-size: 1rem;
+    background-image: url('../assets/img/music-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2e2e2e;
+    font-family: 'Kalam', cursive !important;
+}
+
+.header-section {
+    font-family: 'Shadows Into Light', cursive !important;
+}
+
+.layer {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.page-title {
+    font-size: 3em;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #FFF;
+}
+
+.back-arrow span {
+    position: absolute;
+    top: 36px;
+    left: 10px;
+    font-size: 0.75em;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.back-arrow a:hover {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+.artist-box {
+    padding: 15px;
+    margin-top: 25vh !important;
+    border: 1px solid #FFF;
+    position: center;
+}
+
+.artist-box h1 {
+    font-size: 4em;
+}
