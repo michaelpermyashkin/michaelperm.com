@@ -56,6 +56,16 @@ body {
     right: 0;
 }
 
+.social-link-container-label {
+    text-decoration: none !important;
+    padding-bottom: 10px;
+    color: #FFF;
+}
+
+.social-link-container-label:hover {
+    color: rgb(160, 160, 160);
+}
+
 .social-container {
     /* position: fixed !important; */
     /* bottom: 0 !important; */
