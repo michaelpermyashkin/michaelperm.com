@@ -56,3 +56,22 @@ body {
 .artist-box h1 {
     font-size: 4em;
 }
+
+
+/* Mobile */
+
+@media only screen and (max-height: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+    .artist-box {
+        margin-top: 28vh !important;
+    }
+    .artist-box h1 {
+        font-size: 3em;
+    }
+}

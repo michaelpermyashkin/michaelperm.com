@@ -76,3 +76,20 @@ body {
     justify-content: center !important;
     align-items: center !important;
 }
+
+
+/* Mobile */
+
+@media only screen and (max-height: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+    .btn-social {
+        width: 2.75rem !important;
+        height: 2.75rem !important;
+    }
+}

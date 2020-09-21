@@ -71,6 +71,12 @@ _END;
                 ?> 
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
     <script>
         $('button.photograph-card').click(function() { 

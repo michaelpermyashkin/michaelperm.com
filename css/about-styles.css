@@ -71,3 +71,21 @@ body {
     border-bottom: 1px solid #FFF;
     font-size: 1.9rem;
 }
+
+
+/* Mobile */
+
+@media only screen and (max-height: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+    .love-list-label {
+        width: 100% !important;
+        border-bottom: 1px solid #FFF;
+        font-size: 1.2rem;
+    }
+}

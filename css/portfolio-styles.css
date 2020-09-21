@@ -133,3 +133,24 @@ body {
 .portfolio-modal h4 a {
     color: #1abc9c;
 }
+
+
+/* Mobile */
+
+@media only screen and (max-height: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+    .portfolio .portfolio-item .portfolio-item-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.818);
+    }
+}
