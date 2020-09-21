@@ -45,3 +45,13 @@ body {
     text-decoration: none;
     color: rgb(194, 194, 194);
 }
+
+@media only screen and (max-width: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+}
