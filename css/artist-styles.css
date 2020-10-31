@@ -48,9 +48,11 @@ body {
 
 .artist-box {
     padding: 15px;
-    margin-top: 25vh !important;
+    margin-top: 5vh !important;
     border: 1px solid #FFF;
     position: center;
+    width: 85vw;
+    max-width: 700px;
 }
 
 .artist-box h1 {
@@ -71,9 +73,6 @@ body {
 }
 
 @media only screen and (max-height: 1000px) {
-    .artist-box {
-        margin-top: 28vh !important;
-    }
     .artist-box h1 {
         font-size: 3em;
     }
