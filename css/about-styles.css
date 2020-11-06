@@ -92,3 +92,8 @@ body {
         font-size: 1.2rem;
     }
 }
+
+.photo-container img {
+    width: 80%;
+    max-width: 500px;
+}
