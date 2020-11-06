@@ -39,8 +39,6 @@ body {
 }
 
 .welcome {
-    margin-top: 3vh;
-    padding: 70px 0;
     text-align: center;
 }
 
@@ -81,15 +79,16 @@ body {
     /* bottom: 0; */
     width: 100%;
     text-align: center;
+    bottom: 0;
 }
 
 .btn-social {
     border-radius: 100%;
     border-width: 2px;
     display: inline-flex;
-    width: 3.75rem;
-    height: 3.75rem;
-    font-size: 1.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.25rem;
     justify-content: center;
     align-items: center;
 }
@@ -97,7 +96,7 @@ body {
 
 /* Mobile */
 
-@media only screen and (max-height: 1000px) {
+@media only screen and (max-width: 1000px) {
     .welcome h1 {
         font-size: 2.5em;
         padding-bottom: 10px;
@@ -107,7 +106,27 @@ body {
         text-align: center;
     }
     .btn-social {
-        width: 2.75rem;
-        height: 2.75rem;
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 1rem;
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+    .welcome h1 {
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
+    .welcome {
+        padding: 70px 0;
+        text-align: center;
+    }
+    .btn-social {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.95rem;
     }
 }

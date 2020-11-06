@@ -35,7 +35,7 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="header-section">
                 <div class="back-arrow">
-                    <h1><span><a href="index.html">&lt; Home</a></span></h1>
+                    <h1><span><a href="/">&lt; Home</a></span></h1>
                 </div>
                 <h1 class="page-title text-center my-4">&bull; Photography &bull;</h1>
             </div>
