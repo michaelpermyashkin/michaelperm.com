@@ -1,0 +1,99 @@
+body {
+    font-size: 1rem;
+    background-image: url('../assets/img/about-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2e2e2e;
+    font-family: 'Kalam', cursive !important;
+}
+
+.header-section {
+    font-family: 'Shadows Into Light', cursive !important;
+}
+
+.layer {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.page-title {
+    font-size: 3em;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #FFF;
+}
+
+.back-arrow span {
+    position: absolute;
+    top: 36px;
+    left: 10px;
+    font-size: 0.75em;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.back-arrow a:hover {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+.tab {
+    margin-left: 30px;
+}
+
+.about-container p {
+    font-size: 1.15em;
+    line-height: 2rem;
+    padding-left: 10px;
+    border-left: 1px solid #FFF;
+}
+
+.text-larger {
+    font-size: 1.5em !important;
+}
+
+.love-list {
+    padding: 15px;
+    border: 1px solid #FFF;
+}
+
+.love-list-label {
+    width: 100% !important;
+    border-bottom: 1px solid #FFF;
+    font-size: 1.9rem;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    .love-list-label {
+        width: 100% !important;
+        border-bottom: 1px solid #FFF;
+        font-size: 1.2rem;
+    }
+}
+
+.photo-container img {
+    width: 80%;
+    max-width: 500px;
+}

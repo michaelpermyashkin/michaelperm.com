@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index-styles.css">
+
+    <!-- Name Font for landing -->
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <title>Michael Permyashkin | Welcome</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="layer pt-5">
+        <div class="welcome my-5">
+            <h1><span>Michael Permyashkin</span></h1>
+            <div class="col-md-6 m-auto link-nav">
+                <a id="about-link" href="/about">About</a>
+                <a id="contact-link" href="/contact">Contact</a>
+                <a id="music-link" href="/artist">Music</a>
+                <a id="portfolio-link" href="/portfolio">Portfolio</a>
+                <a id="photography-link" href="/photography">Photography</a>
+            </div>
+        </div>
+        <div class="social-container">
+            <div class="container d-flex align-items-center flex-column">
+                <div class="justify-content-center" id="mast-head-wrapper">
+                    <div class="row mb-3">
+                        <div class="col mx-0">
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://open.spotify.com/artist/7l5r5SYRTqnx74gM9LBHlT?si=q4f2L6tTQCCWt3eYpGA2vw" target="_blank">
+                                <i class="fab fa-fw fa-spotify"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/micshh/" target="_blank">
+                                <i class="fab fa-fw fa-instagram"></i>
+                            </a>
+                            <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/michael.permyashkin" target="_blank">
+                                <i class="fab fa-fw fa-facebook"></i>
+                            </a> -->
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/michael-permyashkin-202b4517a/" target="_blank">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                            <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/michaelpermyashkin?tab=repositories" target="_blank">
+                                <i class="fab fa-fw fa-github"></i>
+                            </a> -->
+                            <!-- <a class="btn btn-outline-light btn-social mx-1 " href="mailto: michael.permyashkin@gmail.com">
+                                <i class="fas fa-envelope-open"></i>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hover image change -->
+    <script>
+        function setBackground() {
+            var windowSize = $(window).width();
+
+            if (windowSize <= 1000) {
+                jQuery('body').css("background-image", "url(../assets/img/profile-md.jpg)");
+            } else if (windowSize <= 767) {
+                jQuery('body').css("background-image", "url(../assets/img/profile-smjpg)");
+            } else {
+                jQuery('body').css("background-image", "url(../assets/img/profile-lg.jpg)");
+            }
+        }
+        // About
+        jQuery('#about-link').hover(function() {
+            jQuery('body').css("background-image", "url(../assets/img/about-bg.jpg)");
+        }).mouseleave(function() {
+            setBackground();
+        });
+
+        // Contact
+        jQuery('#contact-link').hover(function() {
+            jQuery('body').css("background-image", "url(../assets/img/contact-bg.jpg)");
+        }).mouseleave(function() {
+            setBackground();
+        });
+
+        // Music
+        jQuery('#music-link').hover(function() {
+            jQuery('body').css("background-image", "url(../assets/img/music-bg.jpg)");
+        }).mouseleave(function() {
+            setBackground();
+        });
+
+        // Portfolio
+        jQuery('#portfolio-link').hover(function() {
+            jQuery('body').css("background-image", "url(../assets/img/portfolio-bg.png)");
+        }).mouseleave(function() {
+            setBackground();
+        });
+
+        // Portfolio
+        jQuery('#photography-link').hover(function() {
+            jQuery('body').css("background-image", "url(../assets/img/photography-bg.jpg)");
+        }).mouseleave(function() {
+            setBackground();
+        });
+    </script>
+
+
+</body>
+
+</html>

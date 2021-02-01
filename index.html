@@ -4,121 +4,314 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index-styles.css">
+    <title>Michael Permyashkin</title>
 
-    <!-- Name Font for landing -->
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
-    <title>Michael Permyashkin | Welcome</title>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Custom CSS -->
+    <link href="./css/colors.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="layer pt-5">
-        <div class="welcome my-5">
-            <h1><span>Michael Permyashkin</span></h1>
-            <div class="col-md-6 m-auto link-nav">
-                <a id="about-link" href="/about">About</a>
-                <a id="contact-link" href="/contact">Contact</a>
-                <a id="music-link" href="/artist">Music</a>
-                <a id="portfolio-link" href="/portfolio">Portfolio</a>
-                <a id="photography-link" href="/photography">Photography</a>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <div class="container px-4">
+
+        <div class="" id="nav">
+
+            <div class="profile-picture">
+                <img src="./assets/img/profile-lg.jpg" alt="Avatar" style="width:200px">
             </div>
+
+            <h1>
+                <a href="." class="text-black">
+                    Michael Permyashkin.<span class="text-gray-400" id="page-title">Me</span>
+                </a>
+            </h1>
+
+            <div class="nav-icons">
+                <a href="https://github.com/michaelpermyashkin" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/michael-permyashkin-202b4517a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/micshh/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:michael.permyashkin@gmail.com"><i class="far fa-envelope-open"></i></a>
+                <a href="https://open.spotify.com/artist/7l5r5SYRTqnx74gM9LBHlT?si=B20z6B-gTCWWOIW5mgofBQ" target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+
         </div>
-        <div class="social-container">
-            <div class="container d-flex align-items-center flex-column">
-                <div class="justify-content-center" id="mast-head-wrapper">
-                    <div class="row mb-3">
-                        <div class="col mx-0">
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://open.spotify.com/artist/7l5r5SYRTqnx74gM9LBHlT?si=q4f2L6tTQCCWt3eYpGA2vw" target="_blank">
-                                <i class="fab fa-fw fa-spotify"></i>
-                            </a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/micshh/" target="_blank">
-                                <i class="fab fa-fw fa-instagram"></i>
-                            </a>
-                            <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/michael.permyashkin" target="_blank">
-                                <i class="fab fa-fw fa-facebook"></i>
-                            </a> -->
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/michael-permyashkin-202b4517a/" target="_blank">
-                                <i class="fab fa-fw fa-linkedin-in"></i>
-                            </a>
-                            <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/michaelpermyashkin?tab=repositories" target="_blank">
-                                <i class="fab fa-fw fa-github"></i>
-                            </a> -->
-                            <!-- <a class="btn btn-outline-light btn-social mx-1 " href="mailto: michael.permyashkin@gmail.com">
-                                <i class="fas fa-envelope-open"></i>
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
+
+        <hr class="mt-5">
+
+        <div class="menu-trigger py-5">
+            <div class="mx-2 menu-links text-center">
+                <ul id="menu">
+                    <li>
+                        <a class="tab-link active about-link" title="about">About</a>
+                    </li>
+                    <li>
+                        <a class="tab-link music-link" title="music">Music</a>
+                    </li>
+                    <li>
+                        <a class="tab-link portfolio-link" title="portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="tab-link contact-link" title="contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <!-- Hover image change -->
-    <script>
-        function setBackground() {
-            var windowSize = $(window).width();
 
-            if (windowSize <= 1000) {
-                jQuery('body').css("background-image", "url(../assets/img/profile-md.jpg)");
-            } else if (windowSize <= 767) {
-                jQuery('body').css("background-image", "url(../assets/img/profile-smjpg)");
-            } else {
-                jQuery('body').css("background-image", "url(../assets/img/profile-lg.jpg)");
-            }
-        }
-        // About
-        jQuery('#about-link').hover(function() {
-            jQuery('body').css("background-image", "url(../assets/img/about-bg.jpg)");
-        }).mouseleave(function() {
-            setBackground();
-        });
+    <!-- Content -->
+    <div class="container" id="main">
 
-        // Contact
-        jQuery('#contact-link').hover(function() {
-            jQuery('body').css("background-image", "url(../assets/img/contact-bg.jpg)");
-        }).mouseleave(function() {
-            setBackground();
-        });
+        <!-- About Tab -->
+        <div class="tab container px-4" id="about">
+            <div class="wrapper">
+                <h3 class="py-4">Hello</h3>
+                <div class="pl-4">
+                    <p>
+                        I'm Michael, but people call me Micsh, Permy or just Michael. Home is a small town in central Pennsylvania called Lewisburg. I grew up as the 8th of 13 children - proudly the start of the second half of Permyashkins.
+                        <br>
+                        <br> I am in my senior year studying Software Engineering at Shippensburg University. I had plans of studying mathmatics and art in the hopes of becoming a teacher after school but I quickly found myself searching for something
+                        new.
+                        <br>
+                        <br> Who knew that software was my perfect balance of creativity and problem solving?!
+                        <br>
+                        <br> Enjoy a look into what I do.
+                    </p>
+                </div>
+            </div>
 
-        // Music
-        jQuery('#music-link').hover(function() {
-            jQuery('body').css("background-image", "url(../assets/img/music-bg.jpg)");
-        }).mouseleave(function() {
-            setBackground();
-        });
+            <div class="text-center my-5 size-900 text-gray-300">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
 
-        // Portfolio
-        jQuery('#portfolio-link').hover(function() {
-            jQuery('body').css("background-image", "url(../assets/img/portfolio-bg.png)");
-        }).mouseleave(function() {
-            setBackground();
-        });
+            <div class="wrapper">
+                <h3>What I do</h3>
+                <div class="pl-4">
 
-        // Portfolio
-        jQuery('#photography-link').hover(function() {
-            jQuery('body').css("background-image", "url(../assets/img/photography-bg.jpg)");
-        }).mouseleave(function() {
-            setBackground();
-        });
-    </script>
+                    <!-- music -->
+                    <div class="py-3">
+                        <h4>Music</h4>
+                        <p>
+                            Music was something I never thought I would be interested in learning. The summer after I graduated High School I began to teach myself the guitar and ukulele. Playing and singing my favorite songs eventually turned into writing original music. I released
+                            my single "Saved by Grace" in October 2020 on all platforms. My stage name is "Micsh."
+                        </p>
+                        <iframe width="100%" height="40" src="https://embed.song.link/?url=https%3A%2F%2Fsong.link%2Fi%2F1534959157&theme=light" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox"></iframe>
 
+                        <!-- <a href="https://geo.music.apple.com/us/album/_/1534959156?i=1534959157&mt=1&app=music&ls=1&at=1000lHKX" target="_blank"><i class="fas fa-music mr-3"></i> Apple Music</a>
+                        <br>
+                        <a href="https://open.spotify.com/artist/7l5r5SYRTqnx74gM9LBHlT?si=B20z6B-gTCWWOIW5mgofBQ" target="_blank"><i class="fab fa-spotify mr-3"></i> Spotify</a>
+                        <br>
+                        <a href="https://www.youtube.com/channel/UC4tfY76R58adDqSQKOroWKQ" target="_blank"><i class="fab fa-youtube mr-3"></i> Youtube</a> -->
+                    </div>
+
+                    <!-- photography -->
+                    <div class="py-3">
+                        <h4>Photography <span class="text-gray-400">(...kinda)</span></h4>
+                        <p>
+                            More of a hobby than a passion, photography has been something I have been practicing over the past few months. If you want to see some of my favorite shots checkout my VSCO!
+                        </p>
+                        <a href="https://vsco.co/michaelpermyashkin/gallery" target="_blank"><i class="fas fa-camera-retro mr-3"></i> VSCO</a>
+                    </div>
+
+                    <!-- programming -->
+                    <div class="py-3">
+                        <h4>Programming</h4>
+                        <p>
+                            I found myself in my first programming class my freshman year by accident. I understood the word 'keyboard'... and that was about it. I decided that I was going to catch up to everyone else so I began to code as much as I could. I became President of
+                            the Shippensburg Competetive Programming Team my sophomore year. Since my first programming course, I have come to love and appreciate the beauty of software. Projects have ranged from a functioning e-commerce platform, a 2D
+                            game, sorting algorithm visualizer and a full stack machine learning application.
+                        </p>
+
+                        <!-- Github -->
+                        <a href="https://github.com/michaelpermyashkin" target="_blank"><i class="fab fa-github mr-3"></i> GitHub</a>
+                        <br>
+                        <!-- Portfolio internal link -->
+                        <a href="#"><i class="fas fa-code mr-3"></i>My Portfolio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-5 size-900 text-gray-300">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+
+        </div>
+        <!-- ./ About Tab -->
+
+
+
+        <!-- Music Tab -->
+        <div class="tab container px-4" id="music" style="display: none;">
+            <div class="wrapper">
+                <h3 class="py-4">My Music</h3>
+                <div class="pl-4">
+                    <p>
+                        I write music as Micsh (my name is Russian). Being my nickname since Middle School, Micsh seemed to fit my style.
+                        <br>
+                        <br> I released my first song in January 2020 titled "Without You." Shortly after I decided to make a stylistic change and made the switch to Christian music. I released "Saved by Grace" in October 2020.
+                        <br>
+                        <br> I think everyone needs a creative outlet that allows them to express who they are in a way that captures you. Music is my creative outlet. Writing is refreshing and has helped me find words to express my thoughts and feelings.
+                        <br>
+                        <br> I hope you enjoy the music!
+                    </p>
+                    <br>
+                    <br>
+                    <iframe width="100%" height="40" src="https://embed.song.link/?url=https%3A%2F%2Fsong.link%2Fi%2F1534959157&theme=light" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <!-- ./ Music -->
+
+
+
+        <!-- Portfolio Tab -->
+        <div class="tab container px-4" id="portfolio" style="display: none;">
+            <div class="wrapper">
+                <h3 class="py-4 text-center">Come back soon!</h3>
+
+
+                <!-- Projects -->
+                <div class="card-columns text-gray-900" style="filter: blur(6px);">
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                            <p class="card-text">This is a longer card with supporting text be</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                            <p class="card-text">This is a longer card with supporting text be</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gray-900">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vero</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- ./ Projects -->
+
+            </div>
+        </div>
+        <!-- ./ Portfolio Tab -->
+
+
+
+        <!-- Contact Tab -->
+        <div class="tab container px-4" id="contact" style="display: none;">
+            <div class="wrapper">
+                <h3 class="py-4 text-center text-gray-800">Come back soon!</h3>
+
+                <div class="text-gray-500">
+                    <form style="filter: blur(4px);">
+                        <h3 class="py-4 text-gray-500">Want to connect?</h3>
+
+                        <div class="form-group">
+                            <label for="email">Your email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="your@example.com" disabled>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="What would you like to talk about?" disabled>
+                        </div>
+
+                        <div class="form-group mt-5">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message here!" disabled></textarea>
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn btn-dark py-1 px-5" type="submit" disabled>Send <i class="far fa-paper-plane ml-1"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!-- ./ Contact Tab -->
+
+
+
+    </div>
+
+    <footer class="my-5 py-5">
+    </footer>
+
+    <script src="./js/base.js"></script>
 
 </body>
 
