@@ -1,0 +1,108 @@
+body {
+    font-size: 1rem;
+    background-image: url('../assets/img/contact-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2e2e2e;
+    font-family: 'Kalam', cursive !important;
+}
+
+.header-section {
+    font-family: 'Shadows Into Light', cursive !important;
+}
+
+.layer {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.page-title {
+    font-size: 3em;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #FFF;
+}
+
+.back-arrow span {
+    position: absolute;
+    top: 36px;
+    left: 10px;
+    font-size: 0.75em;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.back-arrow a:hover {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+.contact-box {
+    padding: 15px;
+    border: 1px solid #FFF;
+    position: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.social-link-container-label {
+    text-decoration: none !important;
+    padding-bottom: 10px;
+    color: #FFF;
+}
+
+.social-link-container-label:hover {
+    color: rgb(160, 160, 160);
+}
+
+.social-container {
+    /* position: fixed !important; */
+    /* bottom: 0 !important; */
+    width: 100% !important;
+}
+
+.social-container h3 {
+    font-size: 1rem;
+}
+
+.btn-social {
+    border-radius: 100% !important;
+    border-width: 2px !important;
+    display: inline-flex !important;
+    width: 3.75rem !important;
+    height: 3.75rem !important;
+    font-size: 1.5rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    .btn-social {
+        width: 2.75rem !important;
+        height: 2.75rem !important;
+    }
+}

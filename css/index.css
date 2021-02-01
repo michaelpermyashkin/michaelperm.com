@@ -1,0 +1,52 @@
+.menu-trigger {
+    width: 100% !important;
+    height: 100% !important;
+    transition: visibility 1s;
+}
+
+.menu-links {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.menu-links li {
+    display: inline;
+}
+
+.menu-links a {
+    font-weight: 300;
+    color: rgb(114, 117, 122);
+    border-bottom: 2px solid transparent;
+    padding: 3px 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.menu-links a:hover {
+    color: rgb(39, 42, 47);
+    border-color: rgb(222, 226, 231);
+}
+
+.menu-links a.active {
+    border-color: rgb(147, 150, 156);
+}
+
+.menu-links a.active:hover {
+    border-color: rgb(70, 74, 81);
+}
+
+.menu-links a:not(:first-child) {
+    padding-left: 10px;
+}
+
+#main {
+    font-family: 'Lato', sans-serif;
+}
+
+#main h3 {
+    margin-bottom: 20px;
+}
+
+.wrapper:nth-child(even) h3 {
+    text-align: right !important;
+}

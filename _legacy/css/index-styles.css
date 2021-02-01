@@ -1,0 +1,132 @@
+body {
+    font-size: 1rem;
+    background-image: url('../assets/img/profile-lg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2e2e2e;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+@media only screen and (max-width: 4000px) {
+    body {
+        background-image: url('../assets/img/profile-lg.jpg');
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-image: url('../assets/img/profile-md.jpg');
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url('../assets/img/profile-sm.jpg');
+    }
+}
+
+.layer {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+.welcome {
+    text-align: center;
+}
+
+@media only screen and (max-height: 1000px) {
+    .welcome {
+        padding: 70px 0;
+        text-align: center;
+    }
+}
+
+.welcome h1 {
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+.link-nav {
+    padding-top: 0 !important;
+    width: 260px;
+    padding: 10px;
+    border: 1px solid #FFF;
+}
+
+.link-nav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 29px;
+    color: #b1b1b1;
+    display: block;
+    transition: all 0.3s;
+}
+
+.link-nav a:hover {
+    color: #f1f1f1;
+    letter-spacing: 8px;
+}
+
+.social-container {
+    /* bottom: 0; */
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+.btn-social {
+    border-radius: 100%;
+    border-width: 2px;
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+    .welcome h1 {
+        font-size: 2.5em;
+        padding-bottom: 10px;
+    }
+    .welcome {
+        padding: 70px 0;
+        text-align: center;
+    }
+    .btn-social {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 1rem;
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+    .welcome h1 {
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
+    .welcome {
+        padding: 70px 0;
+        text-align: center;
+    }
+    .btn-social {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.95rem;
+    }
+}

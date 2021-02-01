@@ -1,0 +1,159 @@
+body {
+    font-size: 1rem;
+    background-image: url('../assets/img/portfolio-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2e2e2e;
+    font-family: 'Shadows Into Light', cursive !important;
+}
+
+.layer {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.readable-font {
+    font-family: 'Kalam', cursive !important;
+}
+
+.page-title {
+    font-size: em;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #FFF;
+}
+
+.back-arrow span {
+    position: absolute;
+    top: 36px;
+    left: 10px;
+    font-size: 0.75em;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.back-arrow a:hover {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+.background-card {
+    background: #2e2e2e;
+}
+
+.background-card pre {
+    color: #FFF;
+}
+
+.background-card .card-title {
+    border-bottom: 1px solid #FFF;
+}
+
+.background-card .list-label-item {
+    font-size: 15pt !important;
+    /* color: #8DC87C; */
+}
+
+.background-card dd {
+    font-size: 1.1rem;
+    color: rgb(226, 226, 227);
+}
+
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.818);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 40pt;
+}
+
+.portfolio-modal .portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+    .portfolio-modal .portfolio-modal-title {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+#tools-used a {
+    color: rgb(133, 133, 133);
+}
+
+.img-fluid {
+    border: 2px solid #FFF;
+    border-radius: inherit;
+}
+
+.portfolio-modal {
+    font-family: 'Kalam', cursive !important;
+}
+
+.portfolio-modal .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #6f6f6f;
+    opacity: 1;
+}
+
+.portfolio-modal h4 a {
+    color: #1abc9c;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .back-arrow span {
+        position: absolute;
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    .portfolio .portfolio-item .portfolio-item-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.818);
+    }
+}

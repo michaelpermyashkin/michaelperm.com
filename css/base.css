@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 10vh;
+}
+
+a {
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out !important;
+    color: rgb(144, 151, 163);
+    text-decoration-line: none !important;
+}
+
+a:hover {
+    color: rgb(70, 74, 81);
+}
+
+#nav {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#nav h1 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.page-title {
+    color: rgb(126, 132, 149);
+}
+
+#nav .profile-picture img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    left: 400px;
+    top: 60px;
+    background-color: rgb(234, 236, 241);
+    padding: 6px;
+}
+
+.nav-icons a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-icons a:not(:first-child) {
+    padding-left: 1vw;
+}
