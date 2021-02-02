@@ -50,3 +50,56 @@
 .wrapper:nth-child(even) h3 {
     text-align: right !important;
 }
+
+
+/** 
+ * Portfolio 
+ */
+
+.projects-overview #overview-wrapper ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-cards .card {
+    background-color: rgb(231, 235, 243);
+    border-radius: 0;
+}
+
+.portfolio-cards .card {
+    font-size: 0.85em;
+}
+
+.portfolio-cards .card .description {
+    font-size: 0.9em;
+}
+
+.portfolio-cards .card .project-tools .badge {
+    background-color: rgb(205, 211, 222);
+    color: rgb(35, 36, 39);
+}
+
+@media (max-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
