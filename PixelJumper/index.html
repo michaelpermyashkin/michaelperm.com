@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 
 <head>
@@ -53,6 +54,71 @@
 
 </head>
 
+<style>
+    .keys {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        width: 300px;
+        height: 200px;
+        margin: auto;
+    }
+    
+    .arr {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: grey;
+        color: white;
+        font-size: 20px;
+        border-right: 10px solid darken(grey, 20);
+        border-bottom: 10px solid darken(grey, 20);
+        border-left: 10px solid darken(grey, 15);
+        border-top: 10px solid darken(grey, 10);
+        display: inline-block;
+        margin: 5px;
+        transition: all .05s linear;
+    }
+    
+    .up {
+        position: relative;
+        top: -4px;
+    }
+    
+    .pressed {
+        border-bottom: 8px solid darken(grey, 20);
+        text-shadow: 0 0 10px white;
+        transform: translate(0, 2px);
+    }
+    
+    .names {
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white;
+    }
+    
+    .b {
+        color: blue;
+        text-shadow: 0 0 10px blue, 0 0 10px blue, 0 0 10px blue, 0 0 10px blue;
+        font-size: 100px;
+        font-family: serif;
+    }
+    
+    .a {
+        color: yellow;
+        text-shadow: 0 0 10px yellow, 0 0 10px yellow, 0 0 10px yellow, 0 0 10px yellow;
+        font-size: 100px;
+        font-family: serif;
+    }
+    
+    .fun-fact {
+        width: auto;
+    }
+</style>
+
 <body class="bg-gray-100">
     <!-- Navigation -->
     <div class="container px-4">
@@ -64,8 +130,8 @@
             </div>
 
             <h1>
-                <a href="../#blog" class="text-black">
-                    Michael Permyashkin.<span class="text-gray-400" id="page-title">Blogger</span>
+                <a href="../#portfolio" class="text-black">
+                    Michael Permyashkin.<span class="text-gray-400" id="page-title">Developer</span>
                 </a>
             </h1>
 
@@ -85,63 +151,47 @@
 
     <!-- Content -->
     <div class="container mb-5 pb-5" id="main">
+        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 mt-5 text-center">
 
-        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 mt-5">
+            <div class="notes">
+                <h5 class="text-gray-700">Only Available on Desktop</h5>
+            </div>
 
-            <a href="../#blog"><i class="fas fa-arrow-circle-left mr-2"></i> Go Back</a>
+            <div class="aspect-ratio">
+                <iframe controls id="PixelJumperEmbedded" src="./original/PixelJumper-condensed.html" name="targetframe" style="margin-top: 3vh;" scrolling="no" width="700" height="402" frameborder="0"></iframe>
+            </div>
 
-            <article class="my-5">
-                <h3 class="blog-title">Title</h3>
-                <p class="blog-info text-gray-400">
-                    <small class="blog-date">Tuesday January 1, 2021</small>
-                    <span class="px-2">//</span>
-                    <small class="blog-reading-time text-gray-400"># minute Read</small>
-                </p>
-
-                <div class="blog-content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ad fugiat! Iusto ab cum quasi minima nemo et dolore corrupti, vitae labore asperiores, deleniti consequuntur voluptatem, obcaecati exercitationem dignissimos?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ad fugiat! Iusto ab cum quasi minima nemo et dolore corrupti, vitae labore asperiores, deleniti consequuntur voluptatem, obcaecati exercitationem dignissimos?
-                    </p>
-
-                    <pre class="prettyprint code">
-public class SomeClass {
-    ....
-}
-</pre>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ad fugiat! Iusto ab cum quasi minima nemo et dolore corrupti, vitae labore asperiores, deleniti consequuntur voluptatem, obcaecati exercitationem dignissimos?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ad fugiat! Iusto ab cum quasi minima nemo et dolore corrupti, vitae labore asperiores, deleniti consequuntur voluptatem, obcaecati exercitationem dignissimos?
-                    </p>
-
-                    <h5 class="subtitle">Subtitle</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ad fugiat! Iusto ab cum quasi minima nemo et dolore corrupti, vitae labore asperiores, deleniti consequuntur voluptatem, obcaecati exercitationem dignissimos?
-                    </p>
-                    <p>
-                        Lorem ipsum <code class="prettyprint">var temp = 0;</code> dolor sit amet consectetur adipisicing elit. Ducimus sit ad fugiat! Iusto ab cum quasi minima nemo et dolore corrupti, vitae labore asperiores, deleniti consequuntur voluptatem,
-                        obcaecati exercitationem dignissimos?
-                    </p>
-
+            <div class="controls my-5">
+                <h3><b>Instructions</b></h3>
+                <hr>
+                <h4>Controls</h4>
+                <div class="keys mt-3">
+                    <div class="up arr">
+                        <i class="fa fa-arrow-up"></i>
+                    </div>
+                    <br />
+                    <div class="left arr">
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+                    <div class="right arr">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
                 </div>
+                <h4>How to play</h4>
 
-                <div class="conclusion mt-5">
-                    Thanks for reading!
-                </div>
-            </article>
+                <div><i class="fas fa-key mr-1 text-yellow-700"></i> Collect key to open portal</div>
+                <div><i class="fas fa-heartbeat mr-1 text-green-700"></i> Mushrooms give you more health</div>
+                <div><i class="fas fa-donate mr-1 text-yellow-600"></i> Collect as many coins as you can</div>
+                <div><i class="fas fa-exclamation-triangle mr-1 text-red-700"></i> Avoid all hazards (Spikes, falls, etc.)</div>
+
+            </div>
+
         </div>
-
-        <div class="text-center my-5 size-900 text-gray-300">
-            <i class="fas fa-ellipsis-h"></i>
-        </div>
-
     </div>
 
-    <script src="../js/base.js"></script>
+
+    <script src="./../js/base.js"></script>
+
 
 </body>
 

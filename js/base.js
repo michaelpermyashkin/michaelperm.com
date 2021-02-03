@@ -69,3 +69,16 @@ $('.blog-search').keyup(function() {
         }
     })
 })
+
+$('#tab-contact .card-footer a')
+    .mouseover(function() {
+        var title = $(this).attr('title');
+        $('#hover-card-name').text(title);
+    })
+    .mouseleave(function() {
+        $('#hover-card-name').text('');
+    })
+
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})

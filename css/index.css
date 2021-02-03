@@ -116,6 +116,60 @@ input:active {
     border-color: #000;
 }
 
+#search-blogs-lbl {
+    transition: all 0.1s ease;
+    margin-left: 20px;
+    transform: translateY(-80px);
+    color: #999;
+}
+
+#search-blogs-input {
+    border-radius: 20px;
+    padding: 15px 20px !important;
+}
+
+#search-blogs-input:focus+#search-blogs-lbl {
+    transform: translateY(-115px);
+    color: #5e6369;
+}
+
 .blog-entry .blog-teaser {
     font-size: 0.8em;
+}
+
+
+/**
+ * Contact
+ */
+
+#tab-contact .card .logo {
+    float: left;
+    width: 50px;
+    text-align: center;
+    margin-top: 15%;
+}
+
+#tab-contact .card .content {
+    float: left;
+    padding-left: 20px;
+}
+
+#tab-contact .card {
+    font-family: 'Cormorant Garamond', serif;
+    border: none;
+    background: rgb(237, 238, 241);
+    -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.19);
+    width: 400px;
+    height: 215px;
+}
+
+#tab-contact .card .card-footer a {
+    padding-right: 10px;
+    color: rgb(203, 202, 202);
+}
+
+#tab-contact .card .card-footer a:hover {
+    color: rgb(152, 160, 166);
 }

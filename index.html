@@ -97,13 +97,13 @@
                         <a href="#about" class="tab-link active about-link" title="about">About</a>
                     </li>
                     <li>
+                        <a href="#blog" class="tab-link blog-link" title="blog">Blog</a>
+                    </li>
+                    <li>
                         <a href="#music" class="tab-link music-link" title="music">Music</a>
                     </li>
                     <li>
                         <a href="#portfolio" class="tab-link portfolio-link" title="portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#blog" class="tab-link blog-link" title="blog">Blog</a>
                     </li>
                     <li>
                         <a href="#contact" class="tab-link contact-link" title="contact">Contact</a>
@@ -420,7 +420,7 @@
                             <div class="project-links">
                                 <i class="fas fa-gamepad mr-1"></i>
                                 <span>
-                                    <a href="https://github.com/michaelpermyashkin/Pixel-Jumper" target="_blank" class="text-primary">Demo</a>
+                                    <a href="./PixelJumper/" target="_blank" class="text-primary">Demo</a>
                                 </span>
                             </div>
 
@@ -536,11 +536,11 @@
         <!-- Blog Tab -->
         <div class="tab container px-4" id="tab-blog" style="display: none;">
             <div class="wrapper">
+                <div class="col-md-10 offset-md-1 ">
+                    <input type="text" id="search-blogs-input" class="form-control mb-5 blog-search border">
+                    <label id="search-blogs-lbl" for="search-blogs-input">What can I help you find?</label>
+                </div>
                 <div class="col-md-10 offset-md-1 px-3">
-
-                    <div class="col-md-10 offset-md-1 col-sm-12">
-                        <input type="text" class="form-control mb-5 blog-search border" placeholder="What can I help you find?">
-                    </div>
 
                     <!-- Template for posting new blogs
 
@@ -588,50 +588,53 @@
         <!-- Contact Tab -->
         <div class="tab container px-4" id="tab-contact" style="display: none;">
             <div class="wrapper">
-                <h3 class="py-4 text-center text-gray-800">Come back soon!</h3>
 
-                <div class="text-gray-500">
-                    <form style="filter: blur(4px);">
-                        <h3 class="py-4 text-gray-500">Want to connect?</h3>
+                <div class="card mx-auto">
+                    <div class="card-body">
 
-                        <div class="form-group">
-                            <label for="email">Your email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="your@example.com" disabled>
+                        <div class="logo">
+                            <h1 class="border border-gray-900 rounded-circle my-auto">M</h1>
                         </div>
 
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="What would you like to talk about?" disabled>
+                        <div class="content">
+                            <h3 class="text-center mb-3 pb-0"><b>Michael S Permyashkin</b></h3>
+                            <div class="info">
+                                <span><i class="far fa-envelope-open mr-1"></i> michael.permyashkin@gmail.com</span>
+                                <br>
+                                <span><i class="fas fa-desktop pr-1"></i> michaelperm.com</span>
+                                <br>
+                                <span><i class="fas fa-map-pin ml-1 mr-1"></i> Shippensburg, PA</span>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="form-group mt-5">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message here!" disabled></textarea>
-                        </div>
-
-                        <div class="text-right">
-                            <button class="btn btn-dark py-1 px-5" type="submit" disabled>Send <i class="far fa-paper-plane ml-1"></i></button>
-                        </div>
-
-                    </form>
+                    <div class="card-footer bg-gray-700 text-light">
+                        <a title="Email" href="mailto:michael.permyashkin@gmail.com"><i class="far fa-envelope-open"></i></a>
+                        <a title="GitHub" href="https://github.com/michaelpermyashkin" target="_blank"><i class="fab fa-github"></i></a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/michael-permyashkin-202b4517a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a title="Instagram" href="https://www.instagram.com/micshh/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a title="Facebook" href="https://www.facebook.com/michael.permyashkin" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a title="Spotify" href="https://open.spotify.com/artist/7l5r5SYRTqnx74gM9LBHlT?si=B20z6B-gTCWWOIW5mgofBQ" target="_blank"><i class="fab fa-spotify"></i></a>
+                        <a title="Apple Music" href="https://geo.music.apple.com/us/album/_/1534959156?i=1534959157&mt=1&app=music&ls=1&at=1000lHKX" target="_blank"><i class="fas fa-music"></i></a>
+                        <a title="VSCO" href="https://vsco.co/michaelpermyashkin/gallery" target="_blank"><i class="fas fa-camera-retro"></i></a>
+                        <span id="hover-card-name" class="pl-3 h5"></span>
+                    </div>
                 </div>
 
+                <div class="text-center my-5 size-900 text-gray-300">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
             </div>
+            <!-- ./ Contact Tab -->
 
-            <div class="text-center my-5 size-900 text-gray-300">
-                <i class="fas fa-ellipsis-h"></i>
-            </div>
+
+
         </div>
-        <!-- ./ Contact Tab -->
 
+        <footer class="my-5 py-5">
+        </footer>
 
-
-    </div>
-
-    <footer class="my-5 py-5">
-    </footer>
-
-    <script src="./js/base.js"></script>
+        <script src="./js/base.js"></script>
 
 </body>
 
