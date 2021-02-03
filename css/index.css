@@ -103,3 +103,15 @@
         column-count: 3;
     }
 }
+
+input,
+input:active,
+input:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+input:active {
+    border-color: #000;
+}

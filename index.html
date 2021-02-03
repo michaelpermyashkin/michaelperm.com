@@ -47,6 +47,19 @@
     <link rel="aiconn" sizes="180x180" href="./assets/favicon/android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1G1VCRBJY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J1G1VCRBJY');
+    </script>
+
 </head>
 
 <body class="bg-gray-100">
@@ -90,6 +103,9 @@
                         <a href="#portfolio" class="tab-link portfolio-link" title="portfolio">Portfolio</a>
                     </li>
                     <li>
+                        <a href="#blog" class="tab-link blog-link" title="blog">Blog</a>
+                    </li>
+                    <li>
                         <a href="#contact" class="tab-link contact-link" title="contact">Contact</a>
                     </li>
                 </ul>
@@ -101,8 +117,11 @@
     <!-- Content -->
     <div class="container" id="main">
 
+
         <!-- About Tab -->
         <div class="tab container px-4" id="tab-about">
+
+            <!-- Welcome Section -->
             <div class="wrapper">
                 <h3 class="py-4">Hello</h3>
                 <div class="pl-4">
@@ -118,11 +137,13 @@
                     </p>
                 </div>
             </div>
+            <!-- ./ Welcome Section -->
 
             <div class="text-center my-5 size-900 text-gray-300">
                 <i class="fas fa-ellipsis-h"></i>
             </div>
 
+            <!-- What I do -->
             <div class="wrapper">
                 <h3>What I do</h3>
                 <div class="pl-4">
@@ -135,17 +156,11 @@
                             my single "Saved by Grace" in October 2020 on all platforms. My stage name is "Micsh."
                         </p>
                         <iframe width="100%" height="40" src="https://embed.song.link/?url=https%3A%2F%2Fsong.link%2Fi%2F1534959157&theme=light" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox"></iframe>
-
-                        <!-- <a href="https://geo.music.apple.com/us/album/_/1534959156?i=1534959157&mt=1&app=music&ls=1&at=1000lHKX" target="_blank"><i class="fas fa-music mr-3"></i> Apple Music</a>
-                        <br>
-                        <a href="https://open.spotify.com/artist/7l5r5SYRTqnx74gM9LBHlT?si=B20z6B-gTCWWOIW5mgofBQ" target="_blank"><i class="fab fa-spotify mr-3"></i> Spotify</a>
-                        <br>
-                        <a href="https://www.youtube.com/channel/UC4tfY76R58adDqSQKOroWKQ" target="_blank"><i class="fab fa-youtube mr-3"></i> Youtube</a> -->
                     </div>
 
                     <!-- photography -->
                     <div class="py-5">
-                        <h4>Photography <span class="text-gray-400">(...kinda)</span></h4>
+                        <h4>Photography <span class="text-gray-300">(...kinda)</span></h4>
                         <p>
                             More of a hobby than a passion, photography has been something I have been practicing over the past few months. If you want to see some of my favorite shots checkout my VSCO!
                         </p>
@@ -165,10 +180,12 @@
                         <a href="https://github.com/michaelpermyashkin" target="_blank"><i class="fab fa-github mr-3"></i> GitHub</a>
                         <br>
                         <!-- Portfolio internal link -->
-                        <a href="#"><i class="fas fa-code mr-3"></i>My Portfolio</a>
+                        <a href="#portfolio" class="tab-link portfolio-link" title="portfolio"><i class="fas fa-code mr-3"></i>Portfolio</a>
+
                     </div>
                 </div>
             </div>
+            <!-- ./ What I do -->
 
             <div class="text-center my-5 size-900 text-gray-300">
                 <i class="fas fa-ellipsis-h"></i>
@@ -196,8 +213,11 @@
                     <br>
                     <br>
                     <iframe width="100%" height="40" src="https://embed.song.link/?url=https%3A%2F%2Fsong.link%2Fi%2F1534959157&theme=light" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox"></iframe>
-
                 </div>
+            </div>
+
+            <div class="text-center my-5 size-900 text-gray-300">
+                <i class="fas fa-ellipsis-h"></i>
             </div>
         </div>
         <!-- ./ Music Tab -->
@@ -206,9 +226,8 @@
 
         <!-- Portfolio Tab -->
         <div class="tab container px-4" id="tab-portfolio" style="display: none;">
+
             <div class="wrapper">
-
-
                 <div class="text-center">
                     <button class="btn btn-gray-200 text-dark justify-content-center">
                         <a class="text-secondary" href="./assets/docs/Michael_Permyashkin_2021_Master.pdf" download>
@@ -506,10 +525,63 @@
                 </div>
                 <!-- ./ Projects -->
 
+                <div class="text-center my-5 size-900 text-gray-300">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
             </div>
         </div>
         <!-- ./ Portfolio Tab -->
 
+
+        <!-- Blog Tab -->
+        <div class="tab container px-4" id="tab-blog" style="display: none;">
+            <div class="wrapper">
+                <div class="col-md-10 offset-md-1 px-3">
+
+                    <div class="col-md-10 offset-md-1 col-sm-12">
+                        <input type="text" class="form-control mb-5 blog-search border" placeholder="What can I help you find?">
+                    </div>
+
+                    <!-- Template for posting new blogs
+
+                     <div class="blog-entry mb-5">
+                        <h4 class="title mb-2">
+                            <a href="./blogs/_template.html" class="text-gray-800">Why Django is the best thing I ever learned!</a>
+                        </h4>
+                        <p class="blog-teaser">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum incidunt doloribus ducimus, amet quasi non unde dolore. Facere eos dolorum repellendus ab voluptatum sint vero perferendis. Deleniti, adipisci tempore!
+                        </p>
+                        <p class="blog-info text-gray-400">
+                            <small class="blog-date">Tuesday January 1, 2020</small>
+                            <span class="px-2">//</span>
+                            <small class="blog-reading-time text-gray-400">5 minute Read</small>
+                        </p>
+                    </div> 
+
+                    -->
+
+                    <div class="blog-entry mb-5">
+                        <h4 class="title mb-2">
+                            <a href="./blogs/how-I-became-a-developer.html" class="text-gray-800">How I became a developer</a>
+                        </h4>
+                        <p class="blog-teaser">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum incidunt doloribus ducimus, amet quasi non unde dolore. Facere eos dolorum repellendus ab voluptatum sint vero perferendis. Deleniti, adipisci tempore!
+                        </p>
+                        <p class="blog-info text-gray-400">
+                            <small class="blog-date">Tuesday January 1, 2020</small>
+                            <span class="px-2">//</span>
+                            <small class="blog-reading-time text-gray-400">5 minute Read</small>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center my-5 size-900 text-gray-300">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+        <!-- ./ Blog Tab -->
 
 
         <!-- Contact Tab -->
@@ -543,6 +615,10 @@
                     </form>
                 </div>
 
+            </div>
+
+            <div class="text-center my-5 size-900 text-gray-300">
+                <i class="fas fa-ellipsis-h"></i>
             </div>
         </div>
         <!-- ./ Contact Tab -->

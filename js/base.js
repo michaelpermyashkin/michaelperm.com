@@ -9,6 +9,8 @@ $(document).ready(function() {
         $('.portfolio-link').click();
     } else if (anchor === "contact") {
         $('.contact-link').click();
+    } else if (anchor === "blog") {
+        $('.blog-link').click();
     } else {
         $('.link-about').click();
     }
@@ -19,13 +21,15 @@ $('.tab-link').click(function() {
     var active = $(this);
     $('#menu li a').each(function() {
         $(this).removeClass('active');
+        if ($(this).attr('title') === active.attr('title')) {
+            $(this).addClass('active');
+        }
     });
 
     $('.tab').each(function() {
         $(this).hide();
     });
 
-    active.addClass('active');
     var tab = active.attr('title');
 
     if (tab === 'portfolio') {
@@ -40,10 +44,28 @@ $('.tab-link').click(function() {
         $('#contact-link').addClass('active');
         $('#page-title').text('Contact');
         $('#tab-contact').show();
+    } else if (tab === 'blog') {
+        $('#blog-link').addClass('active');
+        $('#page-title').text('Blogger');
+        $('#tab-blog').show();
     } else {
         $('#about-link').addClass('active');
         $('#page-title').text('Me');
         $('#tab-about').show();
     }
-
+    window.scrollTo(0, 0);
 });
+
+$('.blog-search').keyup(function() {
+    var query = $(this).val().toLowerCase();
+    $('.blog-entry').each(function() {
+        var title = $(this).find('.title a').text().toLowerCase();
+        console.log(`${query} : ${title} `)
+        if (!title.includes(query)) {
+            console.log('HIDE')
+            $(this).hide();
+        } else {
+            $(this).show();
+        }
+    })
+})
