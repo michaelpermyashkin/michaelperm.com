@@ -53,7 +53,6 @@ $('.tab-link').click(function() {
         $('#page-title').text('Me');
         $('#tab-about').show();
     }
-    window.scrollTo(0, 0);
 });
 
 $('.blog-search').keyup(function() {
