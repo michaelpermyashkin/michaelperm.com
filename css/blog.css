@@ -24,3 +24,13 @@ code {
     margin-top: 5vh;
     font-weight: bold;
 }
+
+article a,
+article a:hover {
+    color: #212529;
+}
+
+article p {
+    font-size: 0.9em;
+    ;
+}
