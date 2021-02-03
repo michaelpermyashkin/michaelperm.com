@@ -179,7 +179,7 @@ input:active {
     color: rgb(152, 160, 166);
 }
 
-@media (max-width: 28em) {
+@media (max-width: 520px) {
     #tab-contact .card {
         width: 100%;
         height: auto;
@@ -188,7 +188,8 @@ input:active {
         margin-left: 0;
     }
     #tab-contact .card .content h3 {
-        font-size: auto;
+        font-size: 4vw;
+        text-align: center;
     }
     #tab-contact .logo {
         position: initial !important;
@@ -196,10 +197,10 @@ input:active {
         margin-bottom: 15px;
     }
     #tab-contact .card .card-footer {
-        padding: initial;
         display: inline-block;
         width: auto;
         text-align: center;
+        justify-content: space-between !important;
     }
     #hover-card-name {
         display: none;
