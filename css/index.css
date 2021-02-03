@@ -115,3 +115,7 @@ input:focus {
 input:active {
     border-color: #000;
 }
+
+.blog-entry .blog-teaser {
+    font-size: 0.8em;
+}
