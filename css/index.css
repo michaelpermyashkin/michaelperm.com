@@ -179,15 +179,29 @@ input:active {
     color: rgb(152, 160, 166);
 }
 
-@media (max-width: 48em) {
+@media (max-width: 28em) {
     #tab-contact .card {
         width: 100%;
         height: auto;
     }
-    #tab-contact .card info span:not(i) {
-        font-size: 0.7em !important;
+    #tab-contact .card .content {
+        margin-left: 0;
     }
-    #tab-contact .card .logo {
-        top: 70px;
+    #tab-contact .card .content h3 {
+        font-size: auto;
+    }
+    #tab-contact .logo {
+        position: initial !important;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #tab-contact .card .card-footer {
+        padding: initial;
+        display: inline-block;
+        width: auto;
+        text-align: center;
+    }
+    #hover-card-name {
+        display: none;
     }
 }
