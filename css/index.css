@@ -22,6 +22,12 @@
     cursor: pointer;
 }
 
+@media (max-width: 48em) {
+    .menu-links a {
+        font-size: 0.75em;
+    }
+}
+
 .menu-links a:hover {
     color: rgb(39, 42, 47);
     border-color: rgb(222, 226, 231);
@@ -142,27 +148,26 @@ input:active {
  * Contact
  */
 
-#tab-contact .card .logo {
-    float: left;
-    width: 50px;
-    text-align: center;
-    margin-top: 15%;
-}
-
-#tab-contact .card .content {
-    float: left;
-    padding-left: 20px;
-}
-
 #tab-contact .card {
     font-family: 'Cormorant Garamond', serif;
+    width: 400px;
+    height: 215px;
     border: none;
     background: rgb(237, 238, 241);
     -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.19);
-    width: 400px;
-    height: 215px;
+}
+
+#tab-contact .card .logo {
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    top: 75px;
+}
+
+#tab-contact .card .content {
+    margin-left: 70px;
 }
 
 #tab-contact .card .card-footer a {
@@ -172,4 +177,17 @@ input:active {
 
 #tab-contact .card .card-footer a:hover {
     color: rgb(152, 160, 166);
+}
+
+@media (max-width: 48em) {
+    #tab-contact .card {
+        width: 100%;
+        height: auto;
+    }
+    #tab-contact .card info span:not(i) {
+        font-size: 0.7em !important;
+    }
+    #tab-contact .card .logo {
+        top: 70px;
+    }
 }
